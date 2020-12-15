@@ -1,0 +1,16 @@
+/home/edgar/My/Projects/Dotnet5/bin/Debug/net5.0/Dotnet5
+/home/edgar/My/Projects/Dotnet5/bin/Debug/net5.0/Dotnet5.deps.json
+/home/edgar/My/Projects/Dotnet5/bin/Debug/net5.0/Dotnet5.runtimeconfig.json
+/home/edgar/My/Projects/Dotnet5/bin/Debug/net5.0/Dotnet5.runtimeconfig.dev.json
+/home/edgar/My/Projects/Dotnet5/bin/Debug/net5.0/Dotnet5.dll
+/home/edgar/My/Projects/Dotnet5/bin/Debug/net5.0/ref/Dotnet5.dll
+/home/edgar/My/Projects/Dotnet5/bin/Debug/net5.0/Dotnet5.pdb
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.csprojAssemblyReference.cache
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.GeneratedMSBuildEditorConfig.editorconfig
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.AssemblyInfoInputs.cache
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.AssemblyInfo.cs
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.csproj.CoreCompileInputs.cache
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.dll
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/ref/Dotnet5.dll
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.pdb
+/home/edgar/My/Projects/Dotnet5/obj/Debug/net5.0/Dotnet5.genruntimeconfig.cache
