@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Dotnet5
 {
@@ -126,11 +129,27 @@ namespace Dotnet5
 		}
 	}
 
+	public class EnumClass {
+		public static async System.Collections.Generic.IAsyncEnumerable<int> GenerateSequence()
+		{
+			for (int i = 0; i < 20; i++) {
+				await Task.Delay(100);
+				yield return i;
+			}
+		}
+
+		public async Task Run()
+		{
+			await foreach (var number in GenerateSequence()) {
+				Console.WriteLine(number);
+			}
+		}
+	}
 
     public class Program
     {
 		
-		static void Main(string[] args)
+		static async Task Main(string[] args)
         {
 			using var file = new System.IO.StreamWriter("WriteLines2.txt");
 
@@ -161,7 +180,35 @@ namespace Dotnet5
 
 			Data2 d2 = new Data2 { x = 11, y = 9};
 			Console.WriteLine(d2.Calculate());
-			
+
+			var enumClass = new EnumClass();
+			await enumClass.Run();
+
+			var words = new string[]
+			{
+							// index from start    index from end
+				"The",      // 0                   ^9
+				"quick",    // 1                   ^8
+				"brown",    // 2                   ^7
+				"fox",      // 3                   ^6
+				"jumped",   // 4                   ^5
+				"over",     // 5                   ^4
+				"the",      // 6                   ^3
+				"lazy",     // 7                   ^2
+				"dog"       // 8                   ^1
+			};
+
+			Console.WriteLine($"The last word is {words[^1]}");
+			var quickBrownFox = words[1..4];
+
+			List<int> numbers = null;
+			numbers ??= new List<int> { 42 };
+			Console.WriteLine(numbers.First());
+
+			var someString = $@"...{45}";
+			var someString2 = @$"...{45}";
+
+			Console.WriteLine(someString2);
         }
     }
 }
